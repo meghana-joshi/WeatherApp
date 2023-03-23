@@ -13,7 +13,7 @@ struct CurrentWeatherView: View {
     
     var body: some View {
         VStack(spacing: Constants.Dimensions.firstSpacing) {
-            AsyncImage(url: URL(string: "https://openweathermap.org/img/wn/"+weatherViewModel.weatherIcon+".png"))
+            AsyncImage(url: URL(string: Constants.Strings.imageBaseUrl+weatherViewModel.weatherIcon+".png"))
                 .scaledToFill()
                 .frame(width: Constants.Dimensions.defaultWidth,
                        height: Constants.Dimensions.defaultHeight,
